@@ -14,9 +14,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 @DiscriminatorValue("Supervisor")
 public class Supervisor extends User implements Serializable {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+
 
 
 

@@ -13,7 +13,8 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-@MappedSuperclass
+@Entity
+
 
 public class User implements Serializable {
     @Id
@@ -23,7 +24,7 @@ public class User implements Serializable {
      String mail;
      String password;
      int cin;
-     String role;
+
 
 
 

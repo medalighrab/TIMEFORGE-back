@@ -17,7 +17,9 @@ import java.util.Set;
 
 public class Employee extends User implements Serializable {
 
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    int employee_id;
 
     @ManyToOne
     Reward employeereward;

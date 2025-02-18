@@ -15,9 +15,7 @@ import java.util.Set;
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class Teamlead extends User implements Serializable {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long idTeamlead;
+
     @OneToMany(cascade = CascadeType.ALL, mappedBy="teamlead")
     private Set<Project> Projects;
     @OneToMany(cascade = CascadeType.ALL, mappedBy="teamlead")
